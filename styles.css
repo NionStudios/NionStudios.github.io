@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Montserrat Alternates Light;
+    src: url('Montserrat Alternates.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+a {
+    font-family: Montserrat Alternates Light, 'Comic Sans MS', cursive;
+   }
+h1 {
+    font-family: 'Arial';
+   }
+h2 {
+    font-family: 'Arial';
+   }
+h3 {
+    font-family: 'Arial';
+   }
+li {
+    font-family: 'Arial';
+   }
+p {
+    font-family: 'Arial';
+   }
+
+/* Основные стили */
+body {
+    font-family: TunnelFont;
+    transition: background-color 0.5s, color 0.5s;
+    margin: 0;
+    padding: 0;
+}
+
+/* Темная и светлая темы */
+.light-theme {
+    background-color: #f0f0f0;
+    color: #2c3e50;
+}
+
+.dark-theme {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+/* Стили для заголовка */
+header {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    background-color: #5E25C9;
+    color: white;
+}
+
+
+.logo img {
+    width: 100px;
+}
+
+/* Стили для кнопок */
+.button {
+    background: linear-gradient(90deg, #B824C6 , #7442C8); /* Градиент */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s; /* Плавные переходы */
+    display: inline-block;
+}
+
+    .button:hover {
+        background: linear-gradient(90deg, #7442C8, #B824C6); /* Изменение градиента при наведении */
+        transform: scale(1.05); /* Увеличение кнопки */
+    }
+
+/* Стили для секций */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Новые стили для списка загрузок */
+.download-list {
+    padding: 0; /* Убираем отступы */
+}
+
+    .download-list li {
+        margin-bottom: 40px; /* Отступ между кнопками загрузки */
+    }
+
+/* Стили для кнопки смены темы и секретной кнопки */
+#theme-toggle,
+#secret-button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    #theme-toggle:hover,
+    #secret-button:hover {
+        background-color: #1f6391;
+    }
+
+/* Стили для планшетов и мобильных */
+@media (max-width: 768px) {
+    .logo img {
+        width: 150px;
+    }
+
+    .button,
+    #theme-toggle,
+    #secret-button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+/* Дополнительные стили для тёмной темы */
+.dark-theme section {
+    background: #34495e; /* Цвет фона секций в тёмной теме */
+    color: #ecf0f1; /* Цвет текста в тёмной теме */
+}
+
+.dark-theme header {
+    background-color: #5E25C9; /* Цвет фона заголовка в тёмной теме */
+}
+
+.dark-theme .button {
+    background-color: #d35400; /* Цвет кнопок в тёмной теме */
+    border-color: #34495e;
+}
+
+    .dark-theme .button:hover {
+        background-color: #e67e22; /* Цвет кнопок при наведении в тёмной теме */
+    }
