@@ -1,0 +1,12 @@
+{
+  "name": "WorldOfParadise",
+  "short_name": "WorldOfParadise",
+  "id": "ru.NionStudios.WorldOfParadise",
+  "description": "",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
